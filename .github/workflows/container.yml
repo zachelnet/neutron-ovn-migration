@@ -19,7 +19,7 @@ jobs:
       id: build-image
       uses: redhat-actions/buildah-build@v2
       with:
-        image: zachelnet/virt-v2v
+        image: zachelnet/neutron-ovn-migration
         tags: ${{ env.tag }}
         containerfiles: |
           ./Dockerfile
